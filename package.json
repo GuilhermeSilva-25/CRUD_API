@@ -1,0 +1,17 @@
+{
+  "name": "projeto-api",
+  "version": "1.0.0",
+  "description": "Minha primeira API CRUD com Node.js e Express",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7"
+  }
+}

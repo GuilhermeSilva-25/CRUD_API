@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de Estudantes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Gestão de Estudantes</h1>
+
+      <form id="form-estudante">
+        <input type="hidden" id="estudante-id" />
+
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            placeholder="Nome do estudante"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="email@dominio.com"
+            required
+          />
+        </div>
+
+        <div class="botoes-form">
+          <button type="submit" class="btn-salvar">Salvar</button>
+          <button type="button" id="btn-limpar" class="btn-limpar">
+            Limpar
+          </button>
+        </div>
+      </form>
+
+      <hr />
+
+      <h2>Lista de Estudantes</h2>
+
+      <table id="tabela-estudantes">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="corpo-tabela"></tbody>
+      </table>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
